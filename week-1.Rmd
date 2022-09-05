@@ -1,0 +1,38 @@
+---
+title: "r_writeDotCSV"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R....
+ggsduigd
+
+
+```{r}
+BridgesOriginal <- read.csv(url("https://archive.ics.uci.edu/ml/machine-learning-databases/bridges/bridges.data.version1"))
+bridges <- as.data.frame(BridgesOriginal)
+names(bridges) = c("ID","River","State","Date","Purpose","Length","Lanes","Clear","T or D","Material","Span","Rel","Type")
+head(bridges)
+
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
