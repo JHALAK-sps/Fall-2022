@@ -2,14 +2,17 @@
 title: "Week-1"
 output: html_document
 ---
+# Jhalak Das
+## Week 1/2
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-## What If Democrats — Or Republicans — Had Won Every Redistricting Battle?
-
+```{r}
+library(RCurl)
+```
 
 
 ### Import the Data and Create a Data Frame
@@ -17,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 # import the data set using read.csv function with no columns.
 
-Redistricting<- read.csv('https://github.com/JHALAK-sps/Fall-2022/blob/master/redistricting-alternate-maps.csv', header=TRUE)
+Redistricting <- read.csv('https://raw.githubusercontent.com/JHALAK-sps/Fall-2022/master/redistricting-alternate-maps.csv', header=TRUE)
 
 dfDis <- as.data.frame(Redistricting)
 
